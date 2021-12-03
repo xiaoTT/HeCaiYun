@@ -1,10 +1,11 @@
 name: Run
 
 on:
-
-  - cron: 20 21 * * *
-
-
+  workflow_dispatch:
+  schedule:
+    - cron: 20 21 * * *
+  watch:
+    types: started
 jobs:
   build:
 
