@@ -2,7 +2,7 @@ name: Run
 
 on:
   workflow_dispatch:
-- cron: 20 21 * * *
+  - cron: 20 21 * * *
   repository_dispatch:
 
 jobs:
